@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "./variables";
 
 const Container = styled.div`
   display: flex;
@@ -14,22 +15,27 @@ const MainFlex = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-	align-content:center;
+  align-content: center;
+  margin: 60px 80px;
+
+  @media ${devices.xl}{
+    margin:40px 60px;
+  }
 `;
 
 const Header = styled.header`
-	background-color: purple;
-	flex: 1.5;
+  background-color: purple;
+  flex: 1.5;
 `;
 
 const Form = styled.form`
-	background-color: green;
-	flex: 4;
+  background-color: green;
+  flex: 4;
 `;
 
 const GoogleButton = styled.button`
-	background-color: black;
-	flex: 2.4;
+  background-color: black;
+  flex: 2.4;
 `;
 
 const ImageContainer = styled.div`
